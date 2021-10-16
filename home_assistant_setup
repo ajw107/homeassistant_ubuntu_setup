@@ -66,7 +66,7 @@ free -h
 #read -p "boo"
 
 infoText "Installing Required Software Packages..."
-apt install -y software-properties-common apparmor-utils apt-transport-https avahi-daemon ca-certificates curl dbus jq network-manager git nfs-kernel-server linux-modules-$(uname -r) linux-modules-extra-$(uname -r)
+apt install -y software-properties-common apparmor-utils apt-transport-https avahi-daemon ca-certificates curl dbus jq network-manager git nfs-kernel-server linux-modules-raspi linux-modules-extra-raspi
 
 infoText "Disabling ModemManager as it will interfer with serial devices..."
 systemctl disable ModemManager
